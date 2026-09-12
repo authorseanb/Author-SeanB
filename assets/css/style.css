@@ -446,44 +446,114 @@ button, input, textarea { font: inherit; }
 .mailing-address-card address span { display: block; }
 .mailing-address-intro { margin: 0 0 8px; color: var(--muted); }
 
+/* =========================================================
+   KIT NEWSLETTER FORM OVERRIDES
+   ========================================================= */
+
 .kit-signup {
   max-width: 620px;
   margin: 24px auto 0;
 }
 
-.kit-signup .formkit-form {
-  background: rgba(20, 10, 10, 0.55) !important;
-  border: 1px solid rgba(255,255,255,0.08) !important;
-  padding: 22px !important;
-  max-width: 620px !important;
-  margin: 0 auto !important;
+/* Remove Kit's default form/background styling */
+.kit-signup .formkit-form[data-uid="fb4af2168f"] {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.kit-signup .formkit-fields {
+/* Kit adds a large amount of padding here */
+.kit-signup .formkit-form[data-uid="fb4af2168f"] [data-style="clean"] {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Stack email + button */
+.kit-signup .formkit-form[data-uid="fb4af2168f"] .formkit-fields {
   display: flex !important;
   flex-direction: column !important;
   gap: 12px !important;
-}
-
-.kit-signup .formkit-field {
   margin: 0 !important;
+  width: 100% !important;
 }
 
-.kit-signup .formkit-input {
+/* Remove Kit margins */
+.kit-signup .formkit-form[data-uid="fb4af2168f"] .formkit-field,
+.kit-signup .formkit-form[data-uid="fb4af2168f"] .formkit-submit {
   width: 100% !important;
-  background: #f5f0e8 !important;
+  margin: 0 !important;
+  flex: none !important;
+}
+
+/* Email input */
+.kit-signup .formkit-form[data-uid="fb4af2168f"] .formkit-input {
+  width: 100% !important;
+  padding: 13px 15px !important;
+
+  background: #f3eee5 !important;
   color: #171313 !important;
-  border: 1px solid #8e7770 !important;
+
+  border: 1px solid #8f7770 !important;
   border-radius: 3px !important;
-  padding: 13px 14px !important;
+
+  font-family: inherit !important;
   font-size: 16px !important;
+  line-height: 1.4 !important;
+
+  box-shadow: none !important;
 }
 
-.kit-signup .formkit-submit {
+.kit-signup .formkit-form[data-uid="fb4af2168f"] .formkit-input:focus {
+  border-color: #a4161a !important;
+  outline: 1px solid #a4161a !important;
+}
+
+/* Subscribe button */
+.kit-signup .formkit-form[data-uid="fb4af2168f"] button.formkit-submit {
   width: 100% !important;
-  margin: 0 !important;
+
   background: #a4161a !important;
+  color: #ffffff !important;
+
+  border: 1px solid #a4161a !important;
   border-radius: 3px !important;
-  color: #fff !important;
+
+  font-family: inherit !important;
+  font-size: 15px !important;
   font-weight: 700 !important;
+
+  cursor: pointer !important;
+  box-shadow: none !important;
+}
+
+/* Kit puts the actual text inside a span */
+.kit-signup .formkit-form[data-uid="fb4af2168f"] button.formkit-submit > span {
+  background: transparent !important;
+  color: #ffffff !important;
+  padding: 12px 20px !important;
+}
+
+/* Hover */
+.kit-signup .formkit-form[data-uid="fb4af2168f"] button.formkit-submit:hover,
+.kit-signup .formkit-form[data-uid="fb4af2168f"] button.formkit-submit:focus {
+  background: #c01c21 !important;
+  border-color: #c01c21 !important;
+}
+
+/* Error/success messages */
+.kit-signup .formkit-form[data-uid="fb4af2168f"] .formkit-alert {
+  font-family: inherit !important;
+  font-size: 14px !important;
+  margin: 10px 0 !important;
+}
+
+/* Kit branding area */
+.kit-signup
+  .formkit-form[data-uid="fb4af2168f"]
+  .formkit-powered-by-convertkit-container {
+  margin: 12px 0 0 !important;
 }
