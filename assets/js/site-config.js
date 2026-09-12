@@ -2,7 +2,7 @@
 window.SITE_CONFIG = {
   authorName: 'Sean Barboza',
   contactEmail: 'authorseanb@gmail.com',
-  newsletterAction: 'https://app.kit.com/forms/9908985/subscriptions',
+  newsletterAction: '',
 
   /*
     OPTIONAL MAILING ADDRESS
