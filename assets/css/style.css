@@ -445,3 +445,45 @@ button, input, textarea { font: inherit; }
 .mailing-address-card address { font-style: normal; color: #e3cdb0; }
 .mailing-address-card address span { display: block; }
 .mailing-address-intro { margin: 0 0 8px; color: var(--muted); }
+
+.kit-signup {
+  max-width: 620px;
+  margin: 24px auto 0;
+}
+
+.kit-signup .formkit-form {
+  background: rgba(20, 10, 10, 0.55) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  padding: 22px !important;
+  max-width: 620px !important;
+  margin: 0 auto !important;
+}
+
+.kit-signup .formkit-fields {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.kit-signup .formkit-field {
+  margin: 0 !important;
+}
+
+.kit-signup .formkit-input {
+  width: 100% !important;
+  background: #f5f0e8 !important;
+  color: #171313 !important;
+  border: 1px solid #8e7770 !important;
+  border-radius: 3px !important;
+  padding: 13px 14px !important;
+  font-size: 16px !important;
+}
+
+.kit-signup .formkit-submit {
+  width: 100% !important;
+  margin: 0 !important;
+  background: #a4161a !important;
+  border-radius: 3px !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+}
