@@ -33,7 +33,7 @@ window.READING_DATA = [
 
   status: "finished",
   startedOn: "September 5, 2026",
-  finishedOn: "September 23, 2026",
+  finishedOn: "September 13, 2026",
 
   rating: 4,
 
