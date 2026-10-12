@@ -12,7 +12,8 @@
 
   STATUS OPTIONS:
     "published"    -> shows Available Now and retailer buttons
-    "coming-soon"  -> shows Coming Soon and no Buy Now button
+    "preorder"     -> shows Preorder Now and retailer buttons before release
+    "coming-soon"  -> shows Coming Soon and no retailer buttons
 
   RELEASE DATE:
   Enter dates as readable text, for example: "October 24, 2026".
@@ -38,8 +39,8 @@ window.BOOKS_DATA = [
     title: "We Who Remain",
     subtitle: "The Fall",
     cover: "assets/images/we-who-remain.jpg",
-    status: "coming-soon",
-    statusLabel: "Coming Soon",
+    status: "preorder",
+    statusLabel: "Preorder Now",
     featured: true,
 
     seriesId: "remain-series",
@@ -58,7 +59,10 @@ window.BOOKS_DATA = [
     publisher: "",
     isbn: "",
     formats: [],
-    purchaseLinks: []
+    purchaseLinks: [
+      { label: "Preorder at Barnes & Noble", url: "https://www.barnesandnoble.com/w/we-who-remain-sean-barboza/1151603506?ean=9798182594899" },
+      { label: "Preorder Kindle eBook", url: "https://www.amazon.com/dp/B0HM47HBPN#detailBullets_feature_div" }
+    ]
   },
 
   {

@@ -13,11 +13,14 @@
 
   const bookUrl = book => `book.html?id=${encodeURIComponent(book.id)}`;
   const isPublished = book => book.status === 'published';
-  const statusLabel = book => book.statusLabel || (isPublished(book) ? 'Available Now' : 'Coming Soon');
+  const isPreorder = book => book.status === 'preorder';
+  const hasRetailLinks = book => isPublished(book) || isPreorder(book);
+  const statusLabel = book => book.statusLabel || (isPublished(book) ? 'Available Now' : isPreorder(book) ? 'Preorder Now' : 'Coming Soon');
 
   function statusBadge(book) {
-    const dateText = !isPublished(book) && book.releaseDate ? ` · ${book.releaseDate}` : '';
-    return `<span class="status-badge ${isPublished(book) ? 'published' : 'coming-soon'}">${esc(statusLabel(book) + dateText)}</span>`;
+    const dateText = (isPreorder(book) || !isPublished(book)) && book.releaseDate ? ` · ${book.releaseDate}` : '';
+    const statusClass = isPublished(book) ? 'published' : isPreorder(book) ? 'preorder' : 'coming-soon';
+    return `<span class="status-badge ${statusClass}">${esc(statusLabel(book) + dateText)}</span>`;
   }
 
   function subtitle(book) {
@@ -32,9 +35,10 @@
 
   function purchaseButtons(book) {
     const links = Array.isArray(book.purchaseLinks) ? book.purchaseLinks.filter(x => x && x.url) : [];
-    if (!isPublished(book)) return `<span class="btn disabled" aria-disabled="true">Coming Soon</span>`;
-    if (!links.length) return `<span class="availability-note">Purchase links will be added here.</span>`;
-    return links.map(link => `<a class="btn" href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label || 'Buy Now')}</a>`).join('');
+    if (!hasRetailLinks(book)) return `<span class="btn disabled" aria-disabled="true">Coming Soon</span>`;
+    if (!links.length) return `<span class="availability-note">Retailer links will be added here.</span>`;
+    const fallbackLabel = isPreorder(book) ? 'Preorder' : 'Buy Now';
+    return links.map(link => `<a class="btn" href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label || fallbackLabel)}</a>`).join('');
   }
 
   function ratingMarkup(value) {
@@ -264,25 +268,17 @@
     }
   }
 
-  // Newsletter
+  // Newsletter: use the form action in the HTML. The config value remains available as a fallback.
   const signup = document.querySelector('[data-newsletter-form]');
-  if (signup) {
-    const endpoint = config.newsletterAction || '';
-    if (endpoint) {
-      signup.action = endpoint;
-      signup.method = 'post';
-    } else {
-      signup.addEventListener('submit', event => {
-        event.preventDefault();
-        const status = signup.querySelector('[data-form-status]');
-        if (status) status.textContent = 'Connect your mailing-list provider in assets/js/site-config.js to activate subscriptions.';
-      });
-    }
+  if (signup && !signup.getAttribute('action') && config.newsletterAction) {
+    signup.action = config.newsletterAction;
+    signup.method = 'post';
   }
 
-  // Contact form
+  // Contact form: when a real form endpoint is present, allow normal submission.
+  // If no endpoint is configured, fall back to opening the visitor's email app.
   const contactForm = document.querySelector('[data-contact-form]');
-  if (contactForm) {
+  if (contactForm && !contactForm.getAttribute('action')) {
     contactForm.addEventListener('submit', event => {
       event.preventDefault();
       const email = config.contactEmail || '';

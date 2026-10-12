@@ -20,7 +20,7 @@
       <a class="brand" href="index.html">Sean <span>Barboza</span></a>
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
       <nav class="nav" data-nav aria-label="Primary navigation">
-        <a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="books.html">Books</a><a href="series.html">Series</a><a href="reading.html">What I'm Reading</a><a href="#mailing-list">Mailing List</a><a href="contact.html">Contact</a>
+        <a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="books.html">Books</a><a href="series.html">Series</a><a href="reading.html">What I'm Reading</a><a href="beta-readers.html">Beta Readers</a><a href="#mailing-list">Mailing List</a><a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -52,20 +52,34 @@
 
     <p>Get exclusive content and updates about upcoming books.</p>
 
-    <div class="signup-box kit-signup">
-      <script
-        async
-        data-uid="fb4af2168f"
-        src="https://sean-barboza.kit.com/fb4af2168f/index.js">
-      </script>
-    </div>
+    <form class="signup-box" data-newsletter-form action="https://formsubmit.co/authorseanb@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New mailing list signup — SeanBarboza.com">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://seanbarboza.com/newsletter-thanks.html">
+      <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off">
+      <div class="form-grid two-column">
+        <div>
+          <label for="newsletter-name">Name <span class="optional">(optional)</span></label>
+          <input id="newsletter-name" name="name" type="text" autocomplete="name">
+        </div>
+        <div>
+          <label for="newsletter-email">Email</label>
+          <input id="newsletter-email" name="email" type="email" autocomplete="email" required>
+        </div>
+      </div>
+      <label class="checkbox-row" for="newsletter-consent">
+        <input id="newsletter-consent" name="email_consent" type="checkbox" value="Yes" required>
+        <span>Yes, send me occasional book news, release updates, and beta-reading announcements.</span>
+      </label>
+      <button class="btn" type="submit">Join the Mailing List</button>
+    </form>
 
-    <p class="form-note">No spam. Just book news and occasional updates. Please check your spam folder.</p>
+    <p class="form-note">Your signup is sent directly to my author inbox. You can ask to be removed at any time.</p>
   </div>
 </section>
   </main>
 
-  <footer class="site-footer"><div class="wrap footer-row"><div>Copyright © <span data-year></span> Sean Barboza</div><div class="footer-links"><a href="books.html">Books</a><a href="reading.html">What I'm Reading</a><a href="contact.html">Contact</a></div></div></footer>
+  <footer class="site-footer"><div class="wrap footer-row"><div>Copyright © <span data-year></span> Sean Barboza</div><div class="footer-links"><a href="beta-readers.html">Beta Readers</a><a href="books.html">Books</a><a href="reading.html">What I'm Reading</a><a href="contact.html">Contact</a></div></div></footer>
 </div>
 <script src="assets/js/site-config.js"></script><script src="assets/data/books.js"></script><script src="assets/data/reading.js"></script><script src="assets/js/main.js"></script>
 </body>

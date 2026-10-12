@@ -49,3 +49,11 @@ If `mailingAddress` is left empty (`[]`), the mailing-address block stays hidden
 
 ## Editing on GitHub
 You can edit these files directly on GitHub.com using the pencil/Edit button and Commit Changes. GitHub Pages republishes automatically.
+
+
+## Preorders and Forms
+
+- `We Who Remain` preorder links live in `assets/data/books.js`. Use `status: "preorder"` while preorder buttons should be visible before release.
+- The homepage mailing-list form, contact form, and beta-reader form use FormSubmit to deliver submissions to `authorseanb@gmail.com`. After deploying, submit each form once and confirm any activation email from FormSubmit.
+- The beta reader page is `beta-readers.html`.
+- Form confirmation pages are `newsletter-thanks.html`, `beta-thanks.html`, and `contact-thanks.html`.

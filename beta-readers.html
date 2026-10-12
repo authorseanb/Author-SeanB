@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beta Readers | Sean Barboza</title>
+  <meta name="description" content="Join Sean Barboza's beta reader interest list for future manuscripts and early-reader opportunities.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="theme-color" content="#0a0909">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+<div class="site-shell">
+  <header class="site-header">
+    <div class="wrap nav-row">
+      <a class="brand" href="index.html">Sean <span>Barboza</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav class="nav" data-nav aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="books.html">Books</a><a href="series.html">Series</a><a href="reading.html">What I'm Reading</a><a href="beta-readers.html" aria-current="page">Beta Readers</a><a href="index.html#mailing-list">Mailing List</a><a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <h1 class="page-title heading-font">Beta Readers</h1>
+        <p class="page-kicker">Interested in reading an unpublished manuscript and giving story-focused feedback? Join the interest list.</p>
+      </div>
+    </section>
+
+    <section class="wrap beta-reader-layout">
+      <div class="prose">
+        <h2 class="heading-font">What Beta Reading Means</h2>
+        <p>Beta readers read a manuscript before publication and tell me what worked, what dragged, what was confusing, and where the story lost or held their attention. You do not need to be an editor. Useful, straightforward reader reactions are what matter most.</p>
+        <p>This page is an interest list for future manuscripts. Signing up does not mean a book is currently ready for beta reading, and it does not guarantee that every volunteer will receive every manuscript.</p>
+        <p>If I have a project that looks like a good fit, I may contact you with the book description, expected turnaround time, and reading format before you decide whether to participate.</p>
+      </div>
+
+      <form class="contact-form beta-reader-form" action="https://formsubmit.co/authorseanb@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New beta reader signup — SeanBarboza.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://seanbarboza.com/beta-thanks.html">
+        <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off">
+
+        <div class="form-grid two-column">
+          <div>
+            <label for="beta-name">Name</label>
+            <input id="beta-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="beta-email">Email</label>
+            <input id="beta-email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div>
+          <label for="beta-genres">What kinds of books do you usually read?</label>
+          <textarea id="beta-genres" name="usual_genres" placeholder="Post-apocalyptic, horror, westerns, science fiction, thrillers..." required></textarea>
+        </div>
+
+        <div class="form-grid two-column">
+          <div>
+            <label for="beta-experience">Have you beta read before?</label>
+            <select id="beta-experience" name="beta_reading_experience" required>
+              <option value="" selected disabled>Select one</option>
+              <option value="No">No</option>
+              <option value="A few times">A few times</option>
+              <option value="Regularly">Regularly</option>
+            </select>
+          </div>
+          <div>
+            <label for="beta-speed">Typical reading time for a full novel</label>
+            <select id="beta-speed" name="typical_reading_time" required>
+              <option value="" selected disabled>Select one</option>
+              <option value="About 1 week">About 1 week</option>
+              <option value="About 2 weeks">About 2 weeks</option>
+              <option value="3–4 weeks">3–4 weeks</option>
+              <option value="Depends on the book">Depends on the book</option>
+            </select>
+          </div>
+        </div>
+
+        <fieldset class="form-fieldset">
+          <legend>What kind of feedback are you comfortable giving?</legend>
+          <label class="checkbox-row"><input type="checkbox" name="feedback_plot_continuity" value="Yes"><span>Plot and continuity</span></label>
+          <label class="checkbox-row"><input type="checkbox" name="feedback_characters" value="Yes"><span>Characters and dialogue</span></label>
+          <label class="checkbox-row"><input type="checkbox" name="feedback_pacing" value="Yes"><span>Pacing and slow spots</span></label>
+          <label class="checkbox-row"><input type="checkbox" name="feedback_confusing" value="Yes"><span>Confusing or unclear moments</span></label>
+          <label class="checkbox-row"><input type="checkbox" name="feedback_typos" value="Yes"><span>Typos or obvious errors you happen to notice</span></label>
+        </fieldset>
+
+        <div>
+          <label for="beta-note">Anything else you'd like me to know? <span class="optional">(optional)</span></label>
+          <textarea id="beta-note" name="additional_notes" placeholder="Favorite books, reading preferences, scheduling limits, or anything else useful."></textarea>
+        </div>
+
+        <label class="checkbox-row agreement-row" for="beta-agreement">
+          <input id="beta-agreement" name="confidentiality_agreement" type="checkbox" value="Agreed" required>
+          <span>I understand that unpublished material is private and I will not share or distribute it. I also understand that joining this list does not guarantee a beta-reading copy.</span>
+        </label>
+
+        <button class="btn" type="submit">Join the Beta Reader List</button>
+        <p class="form-note inline-note">Your signup is sent directly to my author inbox. I will only contact you about relevant beta-reading opportunities or related book updates you request.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-row"><div>Copyright © <span data-year></span> Sean Barboza</div><div class="footer-links"><a href="books.html">Books</a><a href="beta-readers.html">Beta Readers</a><a href="index.html#mailing-list">Mailing List</a><a href="contact.html">Contact</a></div></div></footer>
+</div>
+<script src="assets/js/site-config.js"></script><script src="assets/data/books.js"></script><script src="assets/data/reading.js"></script><script src="assets/js/main.js"></script>
+</body>
+</html>

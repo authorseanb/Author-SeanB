@@ -557,3 +557,83 @@ button, input, textarea { font: inherit; }
   .formkit-powered-by-convertkit-container {
   margin: 12px 0 0 !important;
 }
+
+
+/* ---------- Preorders and custom forms ---------- */
+.status-badge.preorder { border-color: #8f0b10; background: rgba(165, 15, 19, .22); color: #f3d8bd; }
+
+.form-grid { display: grid; gap: 15px; }
+.form-grid.two-column { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.optional { color: var(--muted); font-size: .82em; font-weight: normal; }
+.form-honeypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+
+.signup-box .form-grid { margin-bottom: 12px; }
+.signup-box .checkbox-row { margin-top: 8px; }
+.contact-form select,
+.beta-reader-form select {
+  width: 100%;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: #f5f5f5;
+  color: #161616;
+  padding: 11px 12px;
+  font: inherit;
+}
+
+.checkbox-row {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: normal !important;
+  line-height: 1.4;
+}
+.checkbox-row input[type='checkbox'] {
+  width: auto;
+  flex: 0 0 auto;
+  margin: .25em 0 0;
+  accent-color: var(--red-bright);
+}
+
+.beta-reader-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr);
+  gap: 52px;
+  align-items: start;
+  padding: 44px 0 60px;
+}
+.beta-reader-layout .prose {
+  position: sticky;
+  top: 92px;
+}
+.beta-reader-layout .prose h2 { margin-top: 0; }
+.beta-reader-form {
+  padding: 26px;
+  background: #0a0a0a;
+  border: 1px solid #2b1b1d;
+  border-left: 4px solid var(--red);
+}
+.beta-reader-form textarea { min-height: 120px; }
+.form-fieldset {
+  margin: 0;
+  padding: 17px;
+  border: 1px solid #3c3030;
+}
+.form-fieldset legend { padding: 0 8px; font-weight: bold; }
+.form-fieldset .checkbox-row + .checkbox-row { margin-top: 10px; }
+.agreement-row { padding: 14px; background: #111; border: 1px solid #35292a; }
+.inline-note { color: var(--muted) !important; margin: -2px 0 0 !important; }
+
+.thank-you-wrap { min-height: 62vh; display: grid; place-items: center; padding: 56px 0; }
+.thank-you-card { width: min(100%, 680px); padding: 34px; background: #0a0a0a; border: 1px solid #2b1b1d; border-left: 4px solid var(--red); }
+.thank-you-card .page-title { margin: 0 0 14px; }
+.thank-you-card p { font-size: 1.08rem; margin: 0 0 24px; }
+
+@media (max-width: 900px) {
+  .beta-reader-layout { grid-template-columns: 1fr; gap: 28px; }
+  .beta-reader-layout .prose { position: static; }
+}
+
+@media (max-width: 620px) {
+  .form-grid.two-column { grid-template-columns: 1fr; }
+  .beta-reader-form { padding: 18px; }
+}
