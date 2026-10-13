@@ -38,20 +38,14 @@ window.READING_DATA = [
   rating: 4,
 
   review: [
-"I’m about halfway through Artemis by Andy Weir, and so far it feels very different from The Martian while still having the same kind of fascination with science, problem-solving, and people getting themselves into situations that are much more complicated than they expected. The story follows Jazz Bashara, a porter living in Artemis, the first permanent city on the Moon, who gets pulled into a job that could finally earn her some real money.",
+  "I’m about halfway through Artemis by Andy Weir, and so far I’ve been enjoying the mix of science fiction, crime, and survival. The story follows Jazz Bashara, a porter living in the first city on the Moon, who gets pulled into a job that quickly becomes more complicated than she expected.",
 
-"The lunar setting is easily my favorite part of the book so far. Weir spends a lot of time explaining how Artemis actually functions, from the different sections of the city to transportation, life support, industry, and the strange economy that has developed there. There is a lot of technical information, but most of it feels connected to what Jazz is doing rather than being thrown in just to show off the science.",
+  "The lunar setting is probably my favorite part so far. Weir puts a lot of thought into how the city works, from life support and transportation to the economy and the everyday problems of living on the Moon. There is plenty of science, but most of it fits naturally into the story.",
 
-"Jazz is also a very different protagonist from Mark Watney. She is sarcastic, reckless, stubborn, and constantly looking for a way to make money. She is not always especially likable, but I think that is part of what makes her interesting. She makes bad decisions, knows they are bad decisions, and still manages to convince herself that she can handle whatever happens afterward.",
+  "Jazz is reckless, sarcastic, and always looking for a way to make more money. She makes plenty of questionable decisions, but that also makes her entertaining to follow. The farther she gets into the job, the more it feels like she has gotten involved in something much bigger than she planned.",
 
-"The plot has started turning into something closer to a crime story than the survival story I expected going in. Jazz gets involved in a job that seems fairly straightforward at first, but the farther she gets into it, the more obvious it becomes that she has stepped into something much bigger. That has been the strongest part of the story for me so far because there is a constant feeling that her plans are going to go wrong somehow.",
-
-"The humor is probably going to be one of the more divisive parts of the book. Jazz jokes constantly, even when things are going badly, and some of it works better for me than other parts. There are moments where the dialogue and internal jokes feel a little forced, but there are also plenty of times when her personality makes otherwise technical scenes much more entertaining.",
-
-"So far, Artemis is at its best when Jazz is actually doing something: planning a job, sneaking around the city, solving a technical problem, or trying to figure out how to get herself out of trouble. Those scenes move quickly and make good use of the Moon setting. Some of the character interactions have not grabbed me quite as much, but the world itself has kept me interested.",
-
-"At the halfway point, I’m enjoying Artemis. It has not hooked me quite as strongly as The Martian did, but the combination of a lunar city, crime story, and Andy Weir’s obsession with figuring out exactly how things work makes it an easy book to keep reading. I’m especially interested to see just how badly Jazz’s situation gets before she figures out a way through it."
-  ]
+  "The humor can be a little hit or miss for me, but the story moves quickly when Jazz is planning, sneaking around, or trying to solve a problem. At the halfway point, I’m enjoying it and I’m interested to see how much worse her situation gets before she finds a way out."
+]
 },	
 	{
   id: "Between-Two-Fires",
