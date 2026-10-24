@@ -38,23 +38,13 @@ window.READING_DATA = [
   rating: 4,
 
   review: [
-"Artemis by Andy Weir is a fast-moving science fiction crime story set in the first permanent city on the Moon. It follows Jazz Bashara, a porter who makes extra money smuggling contraband and is always looking for a way to improve her situation. When she is offered a job that could finally make her rich, she gets pulled into something much larger and more dangerous than she expected.",
+  "Artemis by Andy Weir is a fast-paced science fiction crime story set in the first permanent city on the Moon. It follows Jazz Bashara, a porter and smuggler who takes on a job that quickly turns into something much bigger and more dangerous than she expected.",
 
-"The setting was easily my favorite part of the book. Artemis feels like a real place rather than just a science fiction backdrop. Weir spends a lot of time showing how people live there, how the economy works, how the city is built, and how dangerous even simple problems can become when you are surrounded by vacuum. The science can get technical at times, but most of it connects directly to what Jazz is trying to accomplish.",
+  "The setting was easily my favorite part of the book. Artemis feels like a real place, with its own economy, social structure, and constant dangers. Weir spends a lot of time explaining how people actually survive on the Moon, and most of the science fits naturally into the story.",
 
-"Jazz is an entertaining main character, although she can also be frustrating. She is smart, sarcastic, reckless, and constantly convinced that she can talk or think her way out of whatever trouble she creates. Some of her humor did not always work for me, but I liked that she was flawed and often responsible for making her own situation worse.",
+  "Jazz is smart, sarcastic, reckless, and often responsible for making her own problems worse. I liked following her, although some of the humor did not always work for me. The story is strongest when she is planning, improvising, or trying to solve a problem before everything falls apart.",
 
-"The story gets stronger once the original job turns into something much bigger. What starts as a way for Jazz to make money becomes a conspiracy involving some of the most powerful people in Artemis. From that point on, the book becomes a mixture of heist story, mystery, and survival as Jazz tries to stay ahead of people who are much more dangerous than she is.",
-
-"The best parts of the book are the problem-solving scenes. Jazz is constantly having to improvise with limited tools and figure out solutions before something goes wrong. Because the story takes place on the Moon, even a small mistake can become deadly very quickly, and that gives some of the later scenes a lot of tension.",
-
-"The supporting characters were enjoyable, although I did not feel as attached to them as I did to Jazz. Her relationship with her father gives the story some needed emotional weight, and several characters who initially seem minor become important by the end. I also liked that Jazz cannot solve everything alone, especially once her problems begin affecting the entire city.",
-
-"There are parts of Artemis that did not work quite as well for me. Some of the humor feels forced, and Jazz's internal commentary can occasionally become distracting. The technical explanations can also slow the story down, especially when the book stops to explain chemistry or engineering in detail. Still, I usually found the science interesting enough that it did not bother me too much.",
-
-"By the end, Artemis turns into a much larger story than I expected from the opening chapters. The final section does a good job bringing together the different characters, the politics of the city, and the problems Jazz created earlier in the book. It also makes good use of the fact that almost everything around the characters can kill them if something goes wrong.",
-
-"Overall, I enjoyed Artemis. The lunar city and the science behind it were the strongest parts for me, and Jazz was entertaining enough to carry the story even when some of the humor missed. It is a fun science fiction crime story with a lot of problem solving, a good amount of tension, and a setting that I would have liked to spend even more time exploring."
+  "Overall, I enjoyed Artemis. The lunar setting and the problem-solving were the strongest parts for me, and the crime story kept things moving. It has a few weaker moments, but it was still a fun and entertaining read."
 ]
 },	
 	{
