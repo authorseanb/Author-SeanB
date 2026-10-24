@@ -268,6 +268,17 @@
     }
   }
 
+  // Mailing list and beta-reader forms: when a Google Apps Script endpoint is configured,
+  // send submissions there so they can be stored in Google Sheets and emailed to Sean.
+  // Until then, the forms keep their existing FormSubmit actions as a safe fallback.
+  const googleSheetsAction = (config.googleSheetsFormAction || '').trim();
+  if (googleSheetsAction) {
+    document.querySelectorAll('[data-google-sheet-form]').forEach(form => {
+      form.action = googleSheetsAction;
+      form.method = 'post';
+    });
+  }
+
   // Newsletter: use the form action in the HTML. The config value remains available as a fallback.
   const signup = document.querySelector('[data-newsletter-form]');
   if (signup && !signup.getAttribute('action') && config.newsletterAction) {
