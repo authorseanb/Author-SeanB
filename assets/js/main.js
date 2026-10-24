@@ -268,14 +268,48 @@
     }
   }
 
-  // Mailing list and beta-reader forms: when a Google Apps Script endpoint is configured,
-  // send submissions there so they can be stored in Google Sheets and emailed to Sean.
-  // Until then, the forms keep their existing FormSubmit actions as a safe fallback.
+  // Mailing list and beta-reader forms: submit to Google Apps Script in the
+  // background so visitors stay on SeanBarboza.com instead of being sent to
+  // script.google.com after submitting. The form's original FormSubmit action
+  // remains available as a fallback if no Google endpoint is configured.
   const googleSheetsAction = (config.googleSheetsFormAction || '').trim();
   if (googleSheetsAction) {
     document.querySelectorAll('[data-google-sheet-form]').forEach(form => {
-      form.action = googleSheetsAction;
-      form.method = 'post';
+      form.addEventListener('submit', async event => {
+        event.preventDefault();
+
+        const submitButton = form.querySelector('[type="submit"]');
+        const originalButtonText = submitButton ? submitButton.textContent : '';
+        const nextField = form.querySelector('[name="_next"]');
+        const successUrl = nextField && nextField.value
+          ? nextField.value
+          : `${window.location.origin}/`;
+
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = 'Sending...';
+        }
+
+        try {
+          const body = new URLSearchParams();
+          new FormData(form).forEach((value, key) => body.append(key, value));
+
+          await fetch(googleSheetsAction, {
+            method: 'POST',
+            mode: 'no-cors',
+            body
+          });
+
+          window.location.assign(successUrl);
+        } catch (error) {
+          console.error('Form submission failed:', error);
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+          }
+          alert('The form could not be submitted. Please try again.');
+        }
+      });
     });
   }
 
