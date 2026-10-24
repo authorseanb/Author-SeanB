@@ -60,8 +60,9 @@ window.BOOKS_DATA = [
     isbn: "",
     formats: [],
     purchaseLinks: [
-      { label: "Preorder at Barnes & Noble", url: "https://www.barnesandnoble.com/w/we-who-remain-sean-barboza/1151603506?ean=9798182594899" },
-      { label: "Preorder Kindle eBook", url: "https://www.amazon.com/dp/B0HM47HBPN#detailBullets_feature_div" }
+      { label: "Barnes & Noble", url: "https://www.barnesandnoble.com/w/we-who-remain-sean-barboza/1151603506?ean=9798182594899" },
+      { label: "Amazon", url: "https://a.co/d/0agqJEdw" },
+      { label: "Kindle eBook", url: "https://www.amazon.com/dp/B0HM47HBPN#detailBullets_feature_div" }
     ]
   },
 
