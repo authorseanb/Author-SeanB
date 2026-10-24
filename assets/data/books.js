@@ -39,7 +39,7 @@ window.BOOKS_DATA = [
     title: "We Who Remain",
     subtitle: "The Fall",
     cover: "assets/images/we-who-remain.jpg",
-    status: "preorder",
+    status: "published",
     statusLabel: "Preorder Now",
     featured: true,
 
