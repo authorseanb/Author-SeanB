@@ -40,7 +40,7 @@ window.BOOKS_DATA = [
     subtitle: "The Fall",
     cover: "assets/images/we-who-remain.jpg",
     status: "published",
-    statusLabel: "Preorder Now",
+    statusLabel: "Buy Now",
     featured: true,
 
     seriesId: "remain-series",
