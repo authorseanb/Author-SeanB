@@ -35,7 +35,7 @@ window.READING_DATA = [
   startedOn: "October 9, 2026",
   finishedOn: "October 16, 2026",
 
-  rating: 4,
+  rating: 3.5,
 
   review: [
   "Artemis by Andy Weir is a fast-paced science fiction crime story set in the first permanent city on the Moon. It follows Jazz Bashara, a porter and smuggler who takes on a job that quickly turns into something much bigger and more dangerous than she expected.",
