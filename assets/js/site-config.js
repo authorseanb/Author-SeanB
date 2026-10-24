@@ -3,6 +3,8 @@ window.SITE_CONFIG = {
   authorName: 'Sean Barboza',
   contactEmail: 'authorseanb@gmail.com',
   newsletterAction: '',
+  // Paste your deployed Google Apps Script Web App URL here after setup.
+  googleSheetsFormAction: 'https://script.google.com/macros/s/AKfycbxZfthliTsqsQc_w-KUEqr-KR8Ro3yk_DYzl7z9mFbEMn4yhe1aptEtPoyM5GhjvIy3/exec',
 
   /*
     OPTIONAL MAILING ADDRESS
