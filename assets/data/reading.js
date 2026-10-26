@@ -25,6 +25,82 @@
 */
 
 window.READING_DATA = [
+
+	  {
+    id: "one-second-after",
+    title: "One Second After",
+    author: "William R. Forstchen",
+    cover: "assets/images/reading/onesecondafter.jpg",
+    status: "tbr",
+    startedOn: "",
+    finishedOn: "",
+    addedOn: "October 2026",
+    rating: null,
+    review: [],
+    notes: [
+      "Seen good reviews about this."
+    ]
+  },
+	  {
+    id: "dune",
+    title: "Dune",
+    author: "Frank Herbert",
+    cover: "assets/images/reading/dune.jpg",
+    status: "tbr",
+    startedOn: "",
+    finishedOn: "",
+    addedOn: "October 2026",
+    rating: null,
+    review: [],
+    notes: [
+      "Classic Sci-Fi"
+    ]
+  },
+	  {
+    id: "the-blacktounge-thief",
+    title: "The Blacktongue Thief",
+    author: "Christopher Buehlman",
+    cover: "assets/images/reading/theblacktoungethief.jpg",
+    status: "tbr",
+    startedOn: "",
+    finishedOn: "",
+    addedOn: "October 2026",
+    rating: null,
+    review: [],
+    notes: [
+      "Enjoyed Between Two Fires."
+    ]
+  },
+	  {
+    id: "project-hail-mary",
+    title: "Project Hail Mary",
+    author: "Andy Weir",
+    cover: "assets/images/reading/projecthailmary.jpg",
+    status: "tbr",
+    startedOn: "",
+    finishedOn: "",
+    addedOn: "October 2026",
+    rating: null,
+    review: [],
+    notes: [
+      ""
+    ]
+  },
+	{
+    id: "the-martian",
+    title: "The Martian",
+    author: "Andy Weir",
+    cover: "assets/images/reading/themartian.jpg",
+    status: "tbr",
+    startedOn: "",
+    finishedOn: "",
+    addedOn: "October 2026",
+    rating: null,
+    review: [],
+    notes: [
+      "Loved the audio book, now it's time to put eyes to paper."
+    ]
+  },
 	{
   id: "Artemis",
   title: "Artemis",
